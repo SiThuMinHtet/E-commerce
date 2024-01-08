@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order_list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <img src="icons/home.png" alt="">
+                <div class="logo_name">Furniture</div>
+            </div>
+        </div>
+        <img class="side-menu-bar" src="icons/side_menu_bar.png" alt="">
+
+        <ul class="nav_list">
+            <li>
+                <a href="">
+                    <img src="icons/dashboard.png" alt="">
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="">
+                    <img src="icons/products.png" alt="">
+                    <span class="links_name">Products</span>
+                </a>
+                <span class="tooltip">Products</span>
+            </li>
+            <li>
+                <a href="">
+                    <img src="icons/customers.png" alt="">
+                    <span class="links_name">Customers</span>
+                </a>
+                <span class="tooltip">Customers</span>
+            </li>
+            <li>
+                <a href="">
+                    <img src="icons/orders.png" alt="">
+                    <span class="links_name">Orders</span>
+                </a>
+                <span class="tooltip">Orders</span>
+            </li>
+            <li>
+                <a href="">
+                    <img src="icons/staff_list.png" alt="">
+                    <span class="links_name">StaffList</span>
+                </a>
+                <span class="tooltip">Staff List</span>
+            </li>
+            <li>
+                <a href="">
+                    <img src="icons/reports.png" alt="">
+                    <span class="links_name">Reports</span>
+                </a>
+                <span class="tooltip">Reports</span>
+            </li>
+        </ul>
+        <div class="side-bar-bottom">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="icons/setting.png" alt="">
+                        <span class="links_name">Setting</span>
+                    </a>
+                    <span class="tooltip">Setting</span>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="icons/logout.png" alt="">
+                        <span class="links_name">Logout</span>
+                    </a>
+                    <span class="tooltip">Logout</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="add-product-heading">
+            <div class="add-product-heading-left">
+                <h3>Product Management</h3>
+            </div>
+
+            <div class="add-product-heading-right">
+                <div class="noti-bell">
+                    <img src="icons/noti_bell.png" alt="">
+                    <span></span>
+                </div>
+
+                <img src="Images/profile.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="date-search-sort">
+
+        <div class="date">
+            <p>01/01/2023 - 01/01/2024</p> <img src="icons/calendar.png" alt="">
+        </div>
+
+        <div class="search-sort">
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <img src="icons/search.png" alt="">
+            </div>
+            <div class="sort">
+                <select name="" id="">
+                    <option value="">Status</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+
+            <div class="sort">
+                <select name="" id="">
+                    <option value="">Default Sorting</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-card-container">
+        <div class="order-card order-delivered">
+            <p>Orders Delivered <br> 648 K </p>
+            <img src="icons/check_button.png" alt="">
+        </div>
+
+        <div class="order-card order-pending">
+            <p>Orders Pending <br> 650</p>
+            <img src="icons/check_button.png" alt="">
+        </div>
+
+        <div class="order-card order-cancle">
+            <p>Orders Cancel <br> 56 </p>
+            <img src="icons/check_button.png" alt="">
+        </div>
+    </div>
+
+    <div class="customer">
+        <h3>Customers</h3>
+
+        <div class="customer-table">
+            <table>
+                <tr>
+                    <th>
+                        <input type="checkbox" name="" id="">
+                    </th>
+                    <th>
+                        Product Name
+                    </th>
+                    <th>
+                        Order ID
+                    </th>
+
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Customer Name
+                    </th>
+                    <th>
+                        Status
+                    </th>
+                    <th>
+                        Amount
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        Modern Sofa
+                    </td>
+                    <td>
+                        EE72823
+                    </td>
+                    <td>
+                        2023 Nov 22
+                    </td>
+                    <td>
+                        Sofia Mia
+                    </td>
+                    <td class="status-dot">
+                        <span></span>
+                        Delivered
+                    </td>
+                    <td>
+                        250,000 MMK
+                    </td>
+                    <td>
+                        <img src="icons/action.png" alt="">
+                        <img src="icons/bin.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        Modern Sofa
+                    </td>
+                    <td>
+                        EE72823
+                    </td>
+                    <td>
+                        2023 Nov 22
+                    </td>
+                    <td>
+                        Sofia Mia
+                    </td>
+                    <td class="status-dot dot-orange">
+                        <span></span>
+                        Pending
+                    </td>
+                    <td>
+                        250,000 MMK
+                    </td>
+                    <td>
+                        <img src="icons/action.png" alt="">
+                        <img src="icons/bin.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        Modern Sofa
+                    </td>
+                    <td>
+                        EE72823
+                    </td>
+                    <td>
+                        2023 Nov 22
+                    </td>
+                    <td>
+                        Sofia Mia
+                    </td>
+                    <td class="status-dot dot-orange">
+                        <span></span>
+                        Pending
+                    </td>
+                    <td>
+                        250,000 MMK
+                    </td>
+                    <td>
+                        <img src="icons/action.png" alt="">
+                        <img src="icons/bin.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        Modern Sofa
+                    </td>
+                    <td>
+                        EE72823
+                    </td>
+                    <td>
+                        2023 Nov 22
+                    </td>
+                    <td>
+                        Sofia Mia
+                    </td>
+                    <td class="status-dot">
+                        <span></span>
+                        Delivered
+                    </td>
+                    <td>
+                        250,000 MMK
+                    </td>
+                    <td>
+                        <img src="icons/action.png" alt="">
+                        <img src="icons/bin.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        Modern Sofa
+                    </td>
+                    <td>
+                        EE72823
+                    </td>
+                    <td>
+                        2023 Nov 22
+                    </td>
+                    <td>
+                        Sofia Mia
+                    </td>
+                    <td class="status-dot dot-orange">
+                        <span></span>
+                        Pending
+                    </td>
+                    <td>
+                        250,000 MMK
+                    </td>
+                    <td>
+                        <img src="icons/action.png" alt="">
+                        <img src="icons/bin.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        Modern Sofa
+                    </td>
+                    <td>
+                        EE72823
+                    </td>
+                    <td>
+                        2023 Nov 22
+                    </td>
+                    <td>
+                        Sofia Mia
+                    </td>
+                    <td class="status-dot dot-red">
+                        <span></span>
+                        Cancled
+                    </td>
+                    <td>
+                        250,000 MMK
+                    </td>
+                    <td>
+                        <img src="icons/action.png" alt="">
+                        <img src="icons/bin.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        Modern Sofa
+                    </td>
+                    <td>
+                        EE72823
+                    </td>
+                    <td>
+                        2023 Nov 22
+                    </td>
+                    <td>
+                        Sofia Mia
+                    </td>
+                    <td class="status-dot">
+                        <span></span>
+                        Delivered
+                    </td>
+                    <td>
+                        250,000 MMK
+                    </td>
+                    <td>
+                        <img src="icons/action.png" alt="">
+                        <img src="icons/bin.png" alt="">
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <div class="Pagination">
+        <div>
+            <i class="fa-solid fa-less-than"></i>
+        </div>
+        <div>
+            1
+        </div>
+        <div id="blue">
+            2
+        </div>
+        <div>
+            <i class="fa-solid fa-greater-than"></i>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/product_add.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <img src="icons/home.png" alt="">
+                <div class="logo_name">Furniture</div>
+            </div>
+        </div>
+        <img class="side-menu-bar" src="icons/side_menu_bar.png" alt="">
+
+        <ul class="nav_list">
+            <li>
+                <a href="">
+                    <img src="icons/dashboard.png" alt="">
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="">
+                    <img src="icons/products.png" alt="">
+                    <span class="links_name">Products</span>
+                </a>
+                <span class="tooltip">Products</span>
+            </li>
+            <li>
+                <a href="">
+                    <img src="icons/customers.png" alt="">
+                    <span class="links_name">Customers</span>
+                </a>
+                <span class="tooltip">Customers</span>
+            </li>
+            <li>
+                <a href="">
+                    <img src="icons/orders.png" alt="">
+                    <span class="links_name">Orders</span>
+                </a>
+                <span class="tooltip">Orders</span>
+            </li>
+            <li>
+                <a href="">
+                    <img src="icons/staff_list.png" alt="">
+                    <span class="links_name">StaffList</span>
+                </a>
+                <span class="tooltip">Staff List</span>
+            </li>
+            <li>
+                <a href="">
+                    <img src="icons/reports.png" alt="">
+                    <span class="links_name">Reports</span>
+                </a>
+                <span class="tooltip">Reports</span>
+            </li>
+        </ul>
+        <div class="side-bar-bottom">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="icons/setting.png" alt="">
+                        <span class="links_name">Setting</span>
+                    </a>
+                    <span class="tooltip">Setting</span>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="icons/logout.png" alt="">
+                        <span class="links_name">Logout</span>
+                    </a>
+                    <span class="tooltip">Logout</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- add product -->
+    <div class="add-product-container">
+        <div class="add-product-heading">
+            <div class="add-product-heading-left">
+                <h3>Add Product</h3>
+            </div>
+
+            <div class="add-product-heading-right">
+                <div class="noti-bell">
+                    <img src="icons/noti_bell.png" alt="">
+                    <span></span>
+                </div>
+
+                <img src="Images/profile.png" alt="">
+            </div>
+        </div>
+
+
+        <!-- add-image -->
+        <div class="add-image-container">
+            <div class="add-image">
+                <h4>Add Images</h4>
+                <div class="sample-img-lg">
+                    <img src="icons/sample_image.png" alt="">
+                    <p>Browse Image</p>
+                </div>
+
+                <div class="smalple-img-sm">
+                    <img src="icons/sample_image.png" alt="">
+                    <p>smaple-image.jpg <br> 234 KB </p>
+                    <img id="cancle-btn" src="icons/cancle_button.png" alt="">
+                </div>
+                <div class="smalple-img-sm">
+                    <img src="icons/sample_image.png" alt="">
+                    <p>smaple-image.jpg <br> 234 KB </p>
+                    <img id="cancle-btn" src="icons/cancle_button.png" alt="">
+                </div>
+                <div class="smalple-img-sm">
+                    <img src="icons/sample_image.png" alt="">
+                    <p>smaple-image.jpg <br> 234 KB </p>
+                    <img id="cancle-btn" src="icons/cancle_button.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="product-detail">
+                <div class="input product-name">
+                    <label for="name">Product Name</label>
+                    <input id="name" type="text">
+                </div>
+                <div class="input cartagory">
+                    <label for="catagory">Catagory</label>
+                    <select name="" id="catagory">
+                        <option value="">Bed</option>
+                        <option value="">Sofa</option>
+                        <option value="">Chair</option>
+                        <option value="">Lamp</option>
+
+                    </select>
+                </div>
+                <div class="input price">
+                    <label for="price">Price</label>
+                    <input id="price" type="text">
+                </div>
+                <div class="input Description">
+                    <label for="description">Description</label>
+                    <textarea name="" id="description"></textarea>
+                </div>
+                <h3 class="tags-heading">Tags</h3>
+                <div class="tags-container">
+
+                    <div class="tags" id="tag-blue">
+                        <p>Cabinet</p>
+                        <img src="icons/cancle_button.png" alt="">
+                    </div>
+                    <div class="tags">
+                        <p>Sofa</p>
+                        <img src="icons/cancle_button.png" alt="">
+                    </div>
+                    <div class="tags">
+                        <p>Kitchen</p>
+                        <img src="icons/cancle_button.png" alt="">
+                    </div>
+                    <div class="tags">
+                        <p>Table</p>
+                        <img src="icons/cancle_button.png" alt="">
+                    </div>
+                    <div class="tags">
+                        <p>Bed</p>
+                        <img src="icons/cancle_button.png" alt="">
+                    </div>
+                    <div class="tags">
+                        <p>Chair</p>
+                        <img src="icons/cancle_button.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="add-product-btn">
+        <button class="cancle-btn">Cancle</button>
+        <button class="publish-btn">Publish Product</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

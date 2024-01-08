@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/product_list.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <img src="icons/home.png" alt="">
+                <div class="logo_name">Furniture</div>
+            </div>
+        </div>
+        <img class="side-menu-bar" src="icons/side_menu_bar.png" alt="">
+
+        <ul class="nav_list">
+            <li>
+                <a href="">
+                    <img src="icons/dashboard.png" alt="">
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="">
+                    <img src="icons/products.png" alt="">
+                    <span class="links_name">Products</span>
+                </a>
+                <span class="tooltip">Products</span>
+            </li>
+            <li>
+                <a href="">
+                    <img src="icons/customers.png" alt="">
+                    <span class="links_name">Customers</span>
+                </a>
+                <span class="tooltip">Customers</span>
+            </li>
+            <li>
+                <a href="">
+                    <img src="icons/orders.png" alt="">
+                    <span class="links_name">Orders</span>
+                </a>
+                <span class="tooltip">Orders</span>
+            </li>
+            <li>
+                <a href="">
+                    <img src="icons/staff_list.png" alt="">
+                    <span class="links_name">StaffList</span>
+                </a>
+                <span class="tooltip">Staff List</span>
+            </li>
+            <li>
+                <a href="">
+                    <img src="icons/reports.png" alt="">
+                    <span class="links_name">Reports</span>
+                </a>
+                <span class="tooltip">Reports</span>
+            </li>
+        </ul>
+        <div class="side-bar-bottom">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="icons/setting.png" alt="">
+                        <span class="links_name">Setting</span>
+                    </a>
+                    <span class="tooltip">Setting</span>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="icons/logout.png" alt="">
+                        <span class="links_name">Logout</span>
+                    </a>
+                    <span class="tooltip">Logout</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="add-product-heading">
+            <div class="add-product-heading-left">
+                <h3>Product Management</h3>
+            </div>
+
+            <div class="add-product-heading-right">
+                <div class="noti-bell">
+                    <img src="icons/noti_bell.png" alt="">
+                    <span></span>
+                </div>
+
+                <img src="Images/profile.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="product-mng-container">
+        <div class="product-mng">
+            <div class="product-mng-search">
+                <input type="text" placeholder="Search...">
+                <img src="icons/search.png" alt="">
+            </div>
+
+            <div class="new-product-btn">
+                <button><img src="icons/new_product.png" alt="">New Product</button>
+            </div>
+        </div>
+
+        <div class="product_table">
+            <table>
+                <tr>
+                    <th>
+                        <input type="checkbox" name="" id="">
+                    </th>
+                    <th>
+                        <img src="icons/sample_image.png" alt="">
+                    </th>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Product Name
+                    </th>
+                    <th>
+                        Catagory
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        Stock
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        <img src="Images/plush-paradise sofa.png" alt="">
+                    </td>
+                    <td>
+                        EE72823
+                    </td>
+                    <td>
+                        Plus-Paradise Sofa
+                    </td>
+                    <td>
+                        Sofa
+                    </td>
+                    <td id="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </td>
+                    <td>
+                        In Stock
+                    </td>
+                    <td>
+                        205
+                    </td>
+                    <td>
+                        2023 Nov 22
+                    </td>
+                    <td>
+                        <img src="icons/action.png" alt="">
+                        <img src="icons/bin.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        <img src="Images/2024.png" alt="">
+                    </td>
+                    <td>
+                        EE72823
+                    </td>
+                    <td>
+                        Plus-Paradise Sofa
+                    </td>
+                    <td>
+                        Sofa
+                    </td>
+                    <td id="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </td>
+                    <td>
+                        In Stock
+                    </td>
+                    <td>
+                        205
+                    </td>
+                    <td>
+                        2023 Nov 22
+                    </td>
+                    <td>
+                        <img src="icons/action.png" alt="">
+                        <img src="icons/bin.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        <img src="Images/20-410x492 1.png" alt="">
+                    </td>
+                    <td>
+                        EE72823
+                    </td>
+                    <td>
+                        Plus-Paradise Sofa
+                    </td>
+                    <td>
+                        Sofa
+                    </td>
+                    <td id="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </td>
+                    <td>
+                        In Stock
+                    </td>
+                    <td>
+                        205
+                    </td>
+                    <td>
+                        2023 Nov 22
+                    </td>
+                    <td>
+                        <img src="icons/action.png" alt="">
+                        <img src="icons/bin.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        <img src="Images/2025.png" alt="">
+                    </td>
+                    <td>
+                        EE72823
+                    </td>
+                    <td>
+                        Plus-Paradise Sofa
+                    </td>
+                    <td>
+                        Sofa
+                    </td>
+                    <td id="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </td>
+                    <td>
+                        In Stock
+                    </td>
+                    <td>
+                        205
+                    </td>
+                    <td>
+                        2023 Nov 22
+                    </td>
+                    <td>
+                        <img src="icons/action.png" alt="">
+                        <img src="icons/bin.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        <img src="Images/2026.png" alt="">
+                    </td>
+                    <td>
+                        EE72823
+                    </td>
+                    <td>
+                        Plus-Paradise Sofa
+                    </td>
+                    <td>
+                        Sofa
+                    </td>
+                    <td id="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </td>
+                    <td>
+                        In Stock
+                    </td>
+                    <td>
+                        205
+                    </td>
+                    <td>
+                        2023 Nov 22
+                    </td>
+                    <td>
+                        <img src="icons/action.png" alt="">
+                        <img src="icons/bin.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        <img src="Images/2027.png" alt="">
+                    </td>
+                    <td>
+                        EE72823
+                    </td>
+                    <td>
+                        Plus-Paradise Sofa
+                    </td>
+                    <td>
+                        Sofa
+                    </td>
+                    <td id="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </td>
+                    <td>
+                        In Stock
+                    </td>
+                    <td>
+                        205
+                    </td>
+                    <td>
+                        2023 Nov 22
+                    </td>
+                    <td>
+                        <img src="icons/action.png" alt="">
+                        <img src="icons/bin.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        <img src="Images/2028.png" alt="">
+                    </td>
+                    <td>
+                        EE72823
+                    </td>
+                    <td>
+                        Plus-Paradise Sofa
+                    </td>
+                    <td>
+                        Sofa
+                    </td>
+                    <td id="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </td>
+                    <td>
+                        In Stock
+                    </td>
+                    <td>
+                        205
+                    </td>
+                    <td>
+                        2023 Nov 22
+                    </td>
+                    <td>
+                        <img src="icons/action.png" alt="">
+                        <img src="icons/bin.png" alt="">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="Pagination">
+        <div>
+            <i class="fa-solid fa-less-than"></i>
+        </div>
+        <div>
+            1
+        </div>
+        <div id="blue">
+            2
+        </div>
+        <div>
+            <i class="fa-solid fa-greater-than"></i>
+        </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
