@@ -26,6 +26,7 @@ body {
 }
 
 .sidebar.active {
+
     width: 240px;
 }
 
@@ -113,7 +114,6 @@ body {
     color: white;
     transition: all 0.4s ease;
     border-radius: 10px;
-   
 }
 
 .sidebar ul li a:hover {
@@ -144,8 +144,6 @@ body {
     width: 90%;
 }
 
-
-
 /* add_product */
 
 .add-product-heading {
@@ -174,6 +172,7 @@ body {
     background: #4CE13F;
     border-radius: 50%;
 }
+
 
 .profile {
     margin: 10px 100px;
@@ -269,25 +268,11 @@ body {
     border-radius: 10px;
 }
 
-/* .progress {
-    width: 92px;
-    height: 92px;
-} */
 
 .card-text span {
     font-size: 2rem;
     font-weight: 700;
 }
-
-/* .progress svg circle {
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    transform: translate(5px,5px);
-    stroke: blue;
-    stroke-dashoffset: 30;
-    stroke-dasharray: 200;
-} */
 
 .customer h3 {
     color: white;
