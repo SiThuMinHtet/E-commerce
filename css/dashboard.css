@@ -558,141 +558,17 @@ table th,td {
 
 /* graph */
 
-
-.value {
-    margin-top: 10px;
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.graph-container {
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-}
-
-.vertical-container {
-    display: flex;
-    gap: 40px;
-    position: absolute;
-    left: 60px;
-    bottom: -25px;
-   
-}
-
-.vertical {
-    display: flex;
-    gap: 5px;
+.chartCard {
     width: 100%;
+    background: rgba(54, 162, 235, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.vertical .bluebar {
-    position: relative;
-    width: 20px;
-    height: 210px;
-    /* background-color: var(--login_publish_color); */
-    background: var(--login_publish_color);
-
+.chartBox {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background: none;
 }
-
-.vertical .bluebar span {
-    width: 20px;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    /* background: var(--primary_color); */
-    background: var(--primary_color);
-
-}
-
-.vertical .whitebar {
-    position: relative;
-    width: 20px;
-    height: 210px;
-    /* background-color: var(--login_publish_color); */
-    background: white;
-
-}
-
-.vertical .whitebar span {
-    width: 20px;
-    position: absolute;
-    height: 40%;
-    top: 0;
-    left: 0;
-    /* background: var(--primary_color); */
-    background: var(--primary_color);
-}
-
-.month {
-    text-align: center;
-}
-
-.jan .vertical .bluebar span {
-    background: var(--login_publish_color);
-}
-
-.feb .vertical .bluebar span{
-    height: 20%;
-}
-
-.feb .vertical .whitebar span{
-    height: 60%;
-}
-.mar .vertical .bluebar span{
-    height: 10%;
-}
-
-.mar .vertical .whitebar span{
-    height: 70%;
-}
-
-.apr .vertical .bluebar span{
-    height: 40%;
-}
-
-.apr .vertical .whitebar span{
-    height: 20%;
-}
-.may .vertical .bluebar span{
-    height: 30%;
-}
-
-.may .vertical .whitebar span{
-    height: 50%;
-}
-.jun .vertical .bluebar span{
-    height: 60%;
-}
-
-.jun .vertical .whitebar span{
-    height: 80%;
-}
-.july .vertical .bluebar span{
-    height: 40%;
-}
-
-.july .vertical .whitebar span{
-    height: 60%;
-}
-.aug .vertical .bluebar span{
-    height: 30%;
-}
-
-.aug .vertical .whitebar span{
-    height: 40%;
-}
-.sep .vertical .bluebar span{
-    height: 40%;
-}
-
-.sep .vertical .whitebar span{
-    height: 60%;
-}
-
-
-
-

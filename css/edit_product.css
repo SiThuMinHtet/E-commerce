@@ -8,9 +8,8 @@
 body {
     background: var(--body_color);
     position: relative;
-    min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .sidebar {
@@ -198,8 +197,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
-    width: 300px;
+    width: 100%;
+    height: 50%;
     border: 1px dashed white;
     border-radius: 5px;
     margin: 10px 0;
@@ -209,7 +208,7 @@ body {
     color: #475BE8;
  }
 
- .smalple-img-sm {
+ .sample-img-sm {
     height: 80px;
     display: flex;
     align-items: center;
@@ -325,4 +324,89 @@ body {
     color: white;
     background: var(--login_publish_color);
     padding: 10px 25px;
+}
+
+@media (min-width:1000px) and (max-width:1350px) {
+    .add-image {
+        border-radius: 5px;
+        margin: 10px 0;
+        padding: 0 50px;
+        background: var(--primary_color);
+     }
+}
+
+@media (min-width:650px) and (max-width:1000px) {
+    .add-image-container {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .add-product-container {
+        margin-left: 100px;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width:510px) and (max-width:650px) {
+    .add-image-container {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .add-product-container {
+        margin-left: 100px;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .add-image {
+        border-radius: 5px;
+        margin: 10px 0;
+        padding: 0 50px;
+        background: var(--primary_color);
+     }
+}
+
+@media (min-width:320px) and (max-width:510px) {
+    .add-image-container {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .add-image {
+        border-radius: 5px;
+        margin: 10px 0;
+        padding: 0 10px;
+        background: var(--primary_color);
+     }
+
+     .add-product-container {
+        width: 100%;
+        margin-left: 90px;
+        margin-right: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .add-product-heading {
+        display: flex;
+        color: white;
+        background-color: var(--primary_color);
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .add-product-btn {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+    }
 }
