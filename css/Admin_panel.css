@@ -27,13 +27,33 @@ form div label {
 }
 
 
-form button {
+/* form button {
     cursor: pointer;
     color: white;
     margin: 20px 0;
     padding: 10px;
     background: var(--login_publish_color);
     border-radius: 5px;
+   
+}
+
+form button a{
+    text-decoration: none;
+    color: white;
+} */
+
+
+form div {
+    width: 100%;
+}
+form div a{
+    cursor: pointer;
+    color: white;
+    margin: 20px 0;
+    padding: 10px 120px;
+    background: var(--login_publish_color);
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 .login-img img {

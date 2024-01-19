@@ -326,6 +326,11 @@ table th,td {
     align-items: center;
     gap: 10px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-staff-btn a {
+    text-decoration: none;
 }
 
 .status {

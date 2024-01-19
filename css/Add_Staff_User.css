@@ -313,7 +313,7 @@ body {
 
 /* profile-image  */
 
-.profile-img div{
+.profile-img .profile-img-inner{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,11 +324,25 @@ body {
     border-radius: 10px;
 }
 
+.profile-img-inner .browse-img input[type="file"] {
+    display: none;
+}
+.profile-img-inner .browse-img label {
+    width: 100%;
+    display: block;
+    color:#475BE8;
+    cursor: pointer;
+}
 
-.profile-img p {
+.profile-img-inner .browse-img label::after{
+    content: none;
+}
+
+
+/* .profile-img p {
     text-align: center;
     color: #475BE8;
-}
+} */
 
 .position-inner .add-stuff-password input{
     height: 40px;

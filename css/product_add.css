@@ -204,9 +204,16 @@ body {
     margin: 10px 0;
  }
 
- .sample-img-lg p {
-    color: #475BE8;
+ .sample-img-lg div input[type="file"]{
+    display: none;
  }
+
+ .sample-img-lg div label {
+    width: 100%;
+    display: block;
+    color:#475BE8;
+ }
+
 
  .sample-img-sm {
     height: 80px;

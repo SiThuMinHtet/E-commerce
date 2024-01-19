@@ -222,6 +222,11 @@ body {
     border-radius: 5px;
 }
 
+.new-product-btn button a{
+    text-decoration: none;
+    color: white;
+}
+
 
 /* table */
 
