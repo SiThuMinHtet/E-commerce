@@ -26,7 +26,6 @@ body {
 }
 
 .sidebar.active {
-
     width: 240px;
 }
 
@@ -285,6 +284,10 @@ body {
     background: var(--primary_color);
 }
 
+.customer-table {
+    overflow: auto;
+}
+
 .customer-table table {
     width: 100%;
     color: white;
@@ -293,6 +296,7 @@ body {
     padding: 0 20px;
     border-spacing: 40px;
     border-radius: 5px;
+   
 }
 
 .customer-table table tr th {
@@ -571,4 +575,72 @@ table th,td {
     padding: 20px;
     border-radius: 20px;
     background: none;
+}
+
+@media (max-width:950px){
+    .profile, .date-search-sort, .dashboard-card {
+        /* margin-right: 30px; */
+        padding-right: 30px;
+    }
+
+    .customer {
+        margin-right: 30px;
+    }
+
+}
+
+@media (max-width:917px){
+    .profile {
+        padding-right: 0;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:860px) {
+    .dashboard-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .most-sold {
+        grid-column: span 2;
+    }
+
+    .profile {
+        width: 100%;
+    }
+}
+
+
+@media (min-width:320px) and (max-width:700px){
+    .dashboard-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .total-revenue {
+        grid-row: span 1;
+        grid-column:span 1;
+        width: 100%;
+    }
+
+    .most-sold {
+        grid-column:span 1 ;
+        grid-row:span 1 ;
+        width: 90%;
+    }
+
+    .today-sales, .today-revenue, .today-order {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        width: 90%;
+    }
+
+    .customer  {
+        width: 100%;
+    }
+
+    .profile {
+        width: 90%;
+    }
 }

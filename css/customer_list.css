@@ -22,6 +22,7 @@ body {
     background: var(--primary_color);
     padding: 6px 14px;
     transition: all 0.5s ease;
+    z-index: 10;
 }
 
 .sidebar.active {
@@ -249,6 +250,10 @@ body {
     background: var(--primary_color);
 }
 
+.customer-table {
+    overflow: auto;
+}
+
 .customer-table table {
     width: 100%;
     color: white;
@@ -297,3 +302,37 @@ table th,td {
 #blue {
     background: var(--login_publish_color);
 }
+
+@media (max-width:1000px) {
+    .profile, .customer, .Pagination, .date-search-sort {
+        margin-right: 30px;
+    }
+
+    .date-search-sort {
+        padding-right: 0;
+    }
+}
+
+@media (max-width:650px) {
+    .date-search-sort {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (min-width:320px) and (max-width:426px) {
+    .Pagination div {
+        width: 30px;
+        height: 30px;
+    }
+
+    .add-product-heading {
+        padding: 0;
+        margin: 0;
+    }
+
+    .add-product-heading-left h3 {
+        font-size: 16px;
+    }
+}
+

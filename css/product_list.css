@@ -22,6 +22,7 @@ body {
     background: var(--primary_color);
     padding: 6px 14px;
     transition: all 0.5s ease;
+    z-index: 10;
 }
 
 .sidebar.active {
@@ -230,6 +231,10 @@ body {
 
 /* table */
 
+.product_table {
+    overflow: auto;
+}
+
 .product_table table {
     margin: 30px 0;
     color: white;
@@ -271,4 +276,44 @@ tr th img {
 
 #blue {
     background: var(--login_publish_color);
+}
+
+@media (max-width:1024px) {
+    .profile {
+        margin-right: 30px;
+    }
+
+    .product-mng-container {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width:470px) {
+    .profile {
+        margin-right: 10px;
+    }
+
+    .product-mng-container {
+        margin-right: 10px;
+    }
+
+    .Pagination {
+        margin-right: 10px;
+    }
+
+    .product-mng {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width:320px) {
+    .profile {
+        
+    }
+
+    .add-product-heading {
+        padding: 0;
+        margin: 0;
+    }
 }

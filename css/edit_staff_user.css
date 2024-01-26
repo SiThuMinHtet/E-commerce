@@ -22,6 +22,7 @@ body {
     background: var(--primary_color);
     padding: 6px 14px;
     transition: all 0.5s ease;
+    z-index: 10;
 }
 
 .sidebar.active {
@@ -176,6 +177,7 @@ body {
 /* logo_content */
 
 .profile {
+    
     margin: 10px 100px;
 }
 
@@ -480,5 +482,17 @@ label::after {
 
     .add-product-heading-left h3{
         font-size: 15px;
+    }
+
+    .profile-img .profile-img-inner {
+        width: 100%;
+    }
+
+    .add-staff-container {
+        margin-right: 10px;
+    }
+
+    .browse-img label {
+        text-align: center;
     }
 }
